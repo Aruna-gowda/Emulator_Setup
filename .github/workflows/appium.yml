@@ -21,11 +21,11 @@ jobs:
         distribution: 'temurin'
         java-version: 11
         cache: 'gradle'
-    - name: Install the Emulator
-      run: |
-        chmod +x ./scripts/RunAppiumServer.sh
-        ./scripts/RunAppiumServer.sh
-      shell: bash   
+    # - name: Install the Emulator
+    #   run: |
+    #     chmod +x ./scripts/RunAppiumServer.sh
+    #     ./scripts/RunAppiumServer.sh
+    #   shell: bash   
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v2.27.0
       with:
